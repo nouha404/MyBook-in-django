@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/page_one.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Permanent+Marker&family=Poppins&display=swap" rel="stylesheet">
+    <title>Mon livre</title>
+</head>
+<body>
+    <header>
+        <h1>Mon Livre</h1>
+    </header>
+    <div class="container">
+        <div class="image">
+            <!-- <img src="./images/pc.jpg" alt="pc"> -->
+        </div>
+
+        <div class="author">
+            <div class="hacker">
+                <h2>Hacker</h2>
+            </div>
+            <div class="text-content">
+                <div class="description">
+                    <h2>Description</h2>
+                </div>
+                <div class="paragraphe">
+                    <p>
+                        C’est l’histoire de deux amis qui, a force de faire du hacking
+                        découvrent un mystere puis décident d’y jeter un coup d’oeil
+                        et...
+                    </p>
+                </div>
+                <div class="btn">
+                    <div class="item">
+                        <a href="#">Publié</a>
+                    </div>
+                    
+                    <div class="item">
+                        <a href="{% url 'page-two' %}">Lire</a>
+                    </div>
+
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/page_two.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Permanent+Marker&family=Poppins&display=swap" rel="stylesheet">
+    <title>Table De Matieres</title>
+</head>
+<body>
+    <header>
+        <div class="author">
+            <div class="image">
+                <!-- image en bg url -->
+            </div>
+            <p>@nouha404</p>
+        </div>
+        <h1>Table De Matieres</h1>
+    </header>
+
+    <div class="container">
+        <div class="title">
+            <ul>
+                <li><a href="{% url 'article' %} "> Intro</a></li>
+                <li><a href="{% url 'personnage' %} "> Les Personnages</a></li>
+                <li><a href="{% url 'hacking' %} "> Le hacking 2.0</a></li>
+                <li><a href="{% url 'nouvelle-aire' %}"> Une nouvelle air commence ...</a></li>
+                <li><a href="{% url 'demarrage-du-hack' %}"> Demarrage du hack</a></li>
+                <li><a href="{% url 'des-gens-chez-moi' %}"> Des gens chez moi ?</a></li>
+                <li><a href="{% url 'welcome-back' %}"> Heureux de te revoir</a></li>
+                <li><a href="{% url 'fail' %}"> Fail</a></li>
+                <li><a href="{% url 'professor' %}"> Le Professeur clean</a></li>
+            </ul>
+        </div>
+
+        <div class="text-content">
+            <div class="date">
+                <h2>Dernier mis a jour, mai 26</h2>
+            </div>
+            <div class="about-me">
+                <div class="me">
+                    <!-- image -->
+                </div>
+
+                <div class="text">
+                    <p>auteur : @nouha404 </p>
+                    <p>profession : Artist/ sofware engineer</p>
+                   
+                </div>
+                <div class="btn">
+                    <a href="{% url 'article' %}">Lecture</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

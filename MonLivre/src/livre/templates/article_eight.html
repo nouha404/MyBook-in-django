@@ -1,0 +1,26 @@
+{% extends 'article.html' %}
+{% load static %}
+
+{% block head %}
+    <title>{{ books.title }}</title>
+{% endblock %}
+
+{% block title %}
+    <h1> {{ books.title }}</h1>
+{% endblock %}
+
+{% block previous %}
+    <a href="{% url 'welcome-back' %}" class="btn1">Precedant</a>
+{% endblock %}
+
+{% block next %}
+    <a href="{% url 'page-two' %}" class="btn2">Acceuil</a>
+{% endblock %}
+
+{% block content %}
+    <p>{{ books.description }}</p>
+{% endblock %}
+
+{% block button %}
+    <a href=" {% url 'professor' %}">Continuer la lecture du chapitre</a>
+{% endblock %}

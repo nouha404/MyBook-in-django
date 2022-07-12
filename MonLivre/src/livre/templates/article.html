@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/article.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Permanent+Marker&family=Poppins&display=swap" rel="stylesheet">
+    {% block head %}
+        <title>{{ books.title }}</title>
+    {% endblock %}
+
+</head>
+<body>
+    <header>
+        <div class="item">
+            {% block previous %}
+                <a href="{% url 'page-two' %}" class="btn1">Precedant</a>
+            {% endblock %}
+        </div>
+
+        <div class="title">
+            {% block title %}
+                <h1> {{ books.title }}</h1>
+            {% endblock %}
+        </div>
+                 
+
+        <div class="item">
+            {% block next %}
+                <a href="{% url 'page-two' %}" class="btn2">Acceuil</a>
+            {% endblock %}
+        </div>
+           
+    </header>
+    <div class="container">
+        {% block content %}
+            <p>{{ books.description }}</p>
+        {% endblock %}
+    </div>
+
+    {% block main-btn %}
+        <div class="button">
+            {% block button %}
+                <a href=" {% url 'personnage' %}">Continuer la lecture du chapitre</a>
+            {% endblock %}
+        </div>
+    {% endblock %}
+</body>
+</html>

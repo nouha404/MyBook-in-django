@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Permanent Marker';
+    background-color: #fff;
+    height: 1024px;
+    
+}
+
+header {
+    width: 95%;
+    height: 120px;
+    margin: 34px auto;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #830400;
+    border: 1px solid #000000;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+header h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+}
+h1::selection, h2::selection, a::selection, p::selection {
+    color: #830400;
+    background: white ;
+}
+
+.author  {
+    width: 224px;
+    height: 69px;
+    background: #830400;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 13px;
+    position: relative;
+    right: 20%;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    justify-content: space-around;
+}
+.author .image {
+    width: 52px;
+    height: 52px;
+    background: url('../images/artiste.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.container {
+    width: 95%;
+    margin: 65px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.title {
+    width: 678px;
+    height: 703px;
+ 
+
+    background: #830400;
+    border: 1px solid rgba(174, 17, 12, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+ul li {
+    list-style-type: none;
+    text-align: center;
+    
+}
+li a {
+    text-decoration: none; 
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 64px;
+    
+}
+li a:hover {
+    color: #830400;
+    background : white;
+
+}
+.date {
+    width: 528px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #830400;
+    border: 1px solid #AE110C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.date h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: white;
+}
+.about-me {
+    margin: 42px auto;
+    width: 527px;
+    height: 428px;
+    background: url('../images/png.png');
+    border: 1px solid #000000;
+    border-radius: 13px;
+
+}
+.about-me .me {
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+    background: url('../images/nouha.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin: 24px auto;
+
+}
+.text {
+    width: 448px;
+    height: 149px;
+    margin: 27px auto;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(131, 4, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text p {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    
+    text-align: center;
+
+    color: #830400;
+}
+
+.btn {
+    margin: 50px auto;
+    width: 351px;
+    height: 87px;
+    background: #830400;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+}
